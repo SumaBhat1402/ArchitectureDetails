@@ -23,9 +23,10 @@ Below are the factors we need to see for architecting a solution.
    How do you start from scratch?
    Backup
  
-###Manageability 
-  Lifecycle
-  Access
-  Billing/ Utility
-  Deployment
-  Versions
+###Security Considerations
+    public IP
+    DNS
+    Identity provider
+    How to connect to backend services
+    Certificate management
+    Storing secrets
