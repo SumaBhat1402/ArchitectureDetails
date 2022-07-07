@@ -1,1 +1,5 @@
+What is CQRS?
+CQRS - Command and Query Responsibility Segregation, as the name suggests, splits the application in two parts: Command-Side and Query-Side. 
+Commands are the ones that change the state of the object or entity. 
+They are also called modifiers or mutators. Queries are those that return the state of the entity, and do not change anything. They are also called accessors.
 
