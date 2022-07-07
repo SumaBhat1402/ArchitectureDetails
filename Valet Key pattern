@@ -1,1 +1,34 @@
+Context and Problem:
 
+  Client programs and web browser often need to read and write to and from data storages. Application would handle the movement of the data between client and server.
+  This could cause to use more valuable resources like CPU, Memory, compute and bandwidth.
+
+  Data stores have the ability to be retrieved or s end to the client directly without requiring to have application.
+  
+Solution  
+
+  How this pattern works :
+   1. Client sends request to application.
+   2. Application sends the token with fixed time validity with operation details.
+   3. Client uses this token to access data storage.
+      Client will have some fixed time to do the operation and in case if it needs more time it can renew the  token with application.
+   
+Issues and considerations
+    1. Manage the validity status and period of the key
+    2. Consider how to control users' behavior
+    3. Control the level of access the key will provide. 
+    4. Validate, and optionally sanitize, all uploaded data.
+    5. Audit all operations.
+    6. Deliver the key securely.
+    7. Protect sensitive data in transit.
+    8.
+    
+ When to use this Pattern?
+ 
+ When NOT to use this Pattern?
+    1.If the application must perform some task on the data before it's stored or before it's sent to the client. 
+      For example, if the application needs to perform validation, log access success, or execute a transformation on the data.
+    2.If the design of an existing application makes it difficult to incorporate the pattern.
+    3. If it's necessary to limit the size of the data, especially during upload operations. The only solution to this 
+      is for the application to check the data size after the operation is complete, or check the size of uploads after a specified period or on a scheduled basis.
+ 
