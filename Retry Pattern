@@ -1,1 +1,11 @@
 
+Context and problem
+  Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation.
+  This can improve the stability of the application.
+  For example, a database service that's processing a large number of concurrent requests can implement a throttling strategy that temporarily rejects any further requests until its workload has eased.
+  An application trying to access the database might fail to connect, but if it tries again after a delay it might succeed.
+
+Solution
+  If an application finds a request to a service is failure, it can handle failure in below ways.
+  A) Cancel - If the fault indicates, 
+
