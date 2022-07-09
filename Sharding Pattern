@@ -1,1 +1,19 @@
+Context and Problem
+  Divide a data store into a set of horizontal partitions or shards. 
+  
+Solution:
+  Divide the data store into horizontal partitions or shards. Each shard has the same schema, but holds its own distinct subset of the data. 
+  A shard is a data store in its own right (it can contain the data for many entities of different types), running on a server acting as a storage node.
 
+Sharding strategies
+  The Lokkup Startegy
+  The Range  Strategy
+  The Hash Strategy
+
+
+
+Sharding Strategies
+ There are 3 types how to divide the data horizonatally.
+ There need not to be one to one with sharding and the server.
+ Single server can host multiple shards.
+ 
