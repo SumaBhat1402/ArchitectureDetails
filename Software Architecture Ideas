@@ -1,0 +1,8 @@
+Resource : https://www.youtube.com/watch?v=E19D1mki6q4&list=PLdsOZAx8I5umhnn5LLTNJbFgwA3xbycar&index=1
+
+Lesson 150: Quantitative Vs Qualitative analysis.
+Lesson 149: Caching and CAP theoram
+             CAP - Consistency, Availability, Partition
+             a) In Memory replicated caching - Consistency will be missed.
+             b) Distributed client- server caching - Availability will be missed.
+Lesson 148: 
