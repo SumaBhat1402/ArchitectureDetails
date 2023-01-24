@@ -1,0 +1,11 @@
+CDC / Outbox
+The Change Data Capture (CDC) and the Outbox patterns are quite similar. The main concept is that events are derived from the database’s internal logs (i.e WAL).
+When an action is performed, the service only needs to commit changes in the database and doesn’t need to worry about publishing events within the transaction. The database acts as the source of truth.
+
+In the diagram below we have a simple example of the `users` table in a service. On every change in the `users` table, 
+a relevant message is added to the `users_outbox` table. This should be done within one transaction.
+After that, through WAL or a trigger, we can send each entry in the `users_outbox` table as one message.
+
+
+
+
