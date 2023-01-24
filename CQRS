@@ -3,3 +3,6 @@ CQRS - Command and Query Responsibility Segregation, as the name suggests, split
 Commands are the ones that change the state of the object or entity. 
 They are also called modifiers or mutators. Queries are those that return the state of the entity, and do not change anything. They are also called accessors.
 
+
+CQRS style uses two models for creating and updating.
+Application will have 2 flows - one to create and one to update.
